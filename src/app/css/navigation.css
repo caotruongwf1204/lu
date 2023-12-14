@@ -1,0 +1,60 @@
+.main-menu {
+    width: 1170px;
+}
+
+.navigation {
+    position: relative;
+}
+
+.submenu {
+    box-shadow: 0 0 7px 0.5px rgba(0, 0, 0, .15);
+    left: 0;
+    padding: 20px 0 22px;
+    position: absolute;
+    top: 100%;
+    transform: rotateX(90deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s;
+    visibility: hidden;
+    width: max-content;
+    
+}
+
+.submenu li {
+    padding: 5px 15px;
+    z-index: 9999;
+}
+
+.navigation:hover .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.navigation> :hover .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.nav-logo,.nav-icons {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+}
+@media (max-width: 1280px) {
+    .main-menu {
+        width: auto !important;
+    }
+}
